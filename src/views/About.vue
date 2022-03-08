@@ -2,8 +2,8 @@
   <v-container fill-height fluid>
     <v-row align="center" justify="center">
       <v-col cols="12" md="6" sm="6">
-        <v-card class="mx-auto" max-width="600">
-          <v-img src="../assets/img/pastel.jpg" height="250px" contain></v-img>
+        <v-card class="mx-auto" max-width="600" color="#F48FB1" dark>
+          <v-img src="../assets/img/Icono.png" height="250px" contain></v-img>
 
           <v-card-title>Historia</v-card-title>
 
@@ -12,7 +12,7 @@
           </v-card-text>
 
           <v-card-actions>
-            <v-btn color="orange lighten-2" text @click="reveal = true">
+            <v-btn color="#FFF3E0" dark text @click="reveal = true">
               Leer más
             </v-btn>
           </v-card-actions>
@@ -21,6 +21,7 @@
               v-if="reveal"
               class="transition-fast-in-fast-out v-card--reveal"
               style="height: 100%"
+              color="#F48FB1" dark
             >
               <v-card-text class="cardtText">
                 Durante estos 50 años que hemos buscado la satisfacción de
@@ -30,7 +31,7 @@
                 propongan nuevos diseños.
               </v-card-text>
               <v-card-actions class="pt-0">
-                <v-btn text color="teal accent-4" @click="reveal = false">
+                <v-btn text color="#FFF3E0" dark @click="reveal = false">
                   Cerrar
                 </v-btn>
               </v-card-actions>
@@ -39,7 +40,7 @@
         </v-card>
       </v-col>
       <v-col cols="12" md="6" sm="6">
-        <v-card class="mx-auto" max-width="600">
+        <v-card class="mx-auto" max-width="600" color="#F48FB1" dark>
           <v-card-title class="text-h5 mb-4">
             Atención al cliente
           </v-card-title>

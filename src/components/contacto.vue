@@ -1,10 +1,9 @@
-
 <template>
   <v-row justify="end">
     <v-dialog v-model="dialog" persistent max-width="600px">
       <template v-slot:activator="{ on, attrs }">
         <v-btn
-          color="primary"
+          color="#FFF3E0"
           dark
           v-bind="attrs"
           v-on="on"
@@ -13,22 +12,10 @@
         >
           Comprar
         </v-btn>
-        <!-- <v-btn
-          dark
-          v-bind="attrs"
-          v-on="on"
-          right
-          :disabled="!valid"
-          color="success"
-          class="mr-4 mb-3"
-          @click="validate"
-        >
-          Validate
-        </v-btn> -->
       </template>
-      <v-card>
+      <v-card color="#F48FB1" dark>
         <v-card-title>
-          <span class="text-h5">User Profile</span>
+          <span class="text-h5">Datos para el envio</span>
         </v-card-title>
         <v-card-text>
           <v-container>
@@ -54,10 +41,10 @@
         </v-card-text>
         <v-card-actions>
           <v-spacer></v-spacer>
-          <v-btn color="blue darken-1" text @click="dialog = false">
+          <v-btn color="#FFF3E0"  text @click="dialog = false">
             Cancelar
           </v-btn>
-          <v-btn color="blue darken-1" text @click="dialog = false">
+          <v-btn color="#FFF3E0" text @click="dialog = false">
             Solicitar pedido
           </v-btn>
         </v-card-actions>
@@ -72,4 +59,3 @@ export default {
   }),
 };
 </script>
-

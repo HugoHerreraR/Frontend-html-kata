@@ -1,6 +1,6 @@
 <template>
   <v-row ma-1 style="max-width: 100%">
-    <v-tabs v-model="tab" centered fixed-tabs show-arrows :center-active="true">
+    <v-tabs v-model="tab" centered fixed-tabs show-arrows :center-active="true" background-color="#F8BBD0" color="#880E4F">
       <v-tabs-slider></v-tabs-slider>
       <v-tab href="#sabor">Inventario de sabores</v-tab>
       <v-tab href="#adornos">Inventario de adornos</v-tab>
@@ -8,7 +8,7 @@
 
     <v-tabs-items v-model="tab">
       <v-tab-item id="sabor">
-        <v-container>
+        <v-container> 
           <v-row>
             <v-col>
                <sabores></sabores>

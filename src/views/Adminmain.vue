@@ -1,8 +1,8 @@
 <template>
   <div>
-    <v-navigation-drawer v-model="sidebar" app>
+    <v-navigation-drawer v-model="sidebar" app color="#880E4F" dark>
       <v-list>
-        <v-btn text>
+        <v-btn text  v-on:click="admin()">
           <v-icon>mdi-account</v-icon>
         </v-btn>
         <v-list-item
@@ -14,7 +14,7 @@
         </v-list-item>
       </v-list>
     </v-navigation-drawer>
-    <v-toolbar class="margen">
+    <v-toolbar class="margen" color="#880E4F" dark>
       <span class="hidden-sm-and-up">
         <v-app-bar-nav-icon @click="sidebar = !sidebar"> </v-app-bar-nav-icon>
       </span>

@@ -1,6 +1,6 @@
 <template>
   <v-container grid-list-xs>
-    <v-card>
+    <v-card color="#F48FB1">
       <v-card-title>
         Lista de pedidos
         <v-spacer></v-spacer>
@@ -10,6 +10,7 @@
           label="Search"
           single-line
           hide-details
+          dark
         ></v-text-field>
       </v-card-title>
       <v-data-table

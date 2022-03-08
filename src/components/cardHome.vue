@@ -6,7 +6,7 @@
 
     <v-card-actions>
       <v-spacer></v-spacer>
-      <v-btn class="color" v-on:click="cargar"> Ver más </v-btn>
+      <v-btn color="#FFF3E0" text dark v-on:click="cargar"> Ver más </v-btn>
     </v-card-actions>
   </v-card>
 </template>

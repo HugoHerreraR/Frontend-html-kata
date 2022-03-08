@@ -1,7 +1,7 @@
 <template>
   <v-form ref="form" v-model="valid" lazy-validation>
     <v-container>
-      <v-card>
+      <v-card color="#F48FB1" dark>
         <v-card-title primary-title>
           Selcciona el/los sabor(es) de tu pastel
         </v-card-title>
