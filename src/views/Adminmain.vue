@@ -52,7 +52,7 @@ export default {
       menuItems: [
         { title: "Home", path: "/Homepasteles/pastel" },
         { title: "Pedidos", path: "/admin/pedidos" },
-        { title: "Inventario", path: "/admin/about" },
+        { title: "Inventario", path: "/admin/inventario" },
       ],
     };
   },
