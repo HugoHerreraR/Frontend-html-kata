@@ -2,18 +2,21 @@
   <div>
     <v-navigation-drawer v-model="sidebar" app>
       <v-list>
-        <v-list-tile
+        <v-btn text>
+          <v-icon>mdi-account</v-icon>
+        </v-btn>
+        <v-list-item
           v-for="item in menuItems"
           :key="item.title"
           :to="item.path"
         >
-          <v-list-tile-content>{{ item.title }}</v-list-tile-content>
-        </v-list-tile>
+          <v-list-item-content>{{ item.title }}</v-list-item-content>
+        </v-list-item>
       </v-list>
     </v-navigation-drawer>
-    <v-toolbar>
+    <v-toolbar class="margen">
       <span class="hidden-sm-and-up">
-        <v-toolbar-side-icon @click="sidebar = !sidebar"> </v-toolbar-side-icon>
+        <v-app-bar-nav-icon @click="sidebar = !sidebar"> </v-app-bar-nav-icon>
       </span>
       <v-toolbar-title>
         <router-link to="/" tag="span" style="cursor: pointer">
@@ -22,9 +25,16 @@
       </v-toolbar-title>
       <v-spacer></v-spacer>
       <v-toolbar-items class="hidden-xs-only">
-        <v-btn flat v-for="item in menuItems" :key="item.title" :to="item.path">
-          <v-icon left dark>{{ item.icon }}</v-icon>
+        <v-btn
+          text
+          v-for="item in menuItems"
+          :key="item.title"
+          :to="item.path"
+        >
           {{ item.title }}
+        </v-btn>
+        <v-btn text>
+          <v-icon>mdi-account</v-icon>
         </v-btn>
       </v-toolbar-items>
     </v-toolbar>
@@ -37,24 +47,28 @@
 </template>
 
 <script>
-
 export default {
-  name: "HomeView",
-  components: {
-  },
+  // name: "HomeView",
+  components: {},
   data() {
     return {
-      appTitle: "Awesome App",
+      appTitle: "Pasteleria Candy",
       sidebar: false,
       menuItems: [
-        { title: "Pasteles", path: "/Homepasteles/pastel"},
-        { title: "Crea", path: "/Homepasteles/form",},
-        { title: "Sign In", path: "/signin"},
+        { title: "Pasteles", path: "/Homepasteles/pastel" },
+        { title: "Crea tu pastel", path: "/Homepasteles/form" },
+        { title: "Acerca de nosotros", path: "/Homepasteles/about" },
       ],
     };
   },
-  created() {
-    console.log(this.tab);
-  },
+  created() {},
+  methods: {},
+  mounted() {},
 };
 </script>
+
+<style>
+.margen {
+  margin-bottom: 25px;
+}
+</style>

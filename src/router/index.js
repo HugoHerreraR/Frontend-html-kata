@@ -2,6 +2,7 @@ import Vue from "vue";
 import VueRouter from "vue-router";
 import Home from "../views/Home.vue";
 import Formp from "../components/form.vue"
+import About from "../views/About.vue"
 
 Vue.use(VueRouter);
 
@@ -26,12 +27,18 @@ const routes = [
         path: "form",
         name: "form",
         component:Formp,
+      },
+      {
+        path: "about",
+        name: "About",
+        component:About,
       }
     ],
     meta: {
       requiresAuth: true
     }
   },
+
  
 ];
 
