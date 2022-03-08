@@ -17,7 +17,6 @@ export default {
   methods: {
     cargar() {
       this.$router.push({ path: "/Homepasteles/pastel" });
-      location.reload();
     },
   },
 };

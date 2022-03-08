@@ -38,7 +38,19 @@ const routes = [
       requiresAuth: true
     }
   },
-
+  {
+    path: "/admin",
+    name: "Adminmain",
+    meta: { requiresAuth: true },
+    component: () => import("../views/Adminmain.vue"),
+    children:[
+      {
+        path: "pedidos",
+        name: "pedidos",
+        component: () => import("../components/pedidos.vue"),
+      }
+    ]
+  }
  
 ];
 

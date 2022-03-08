@@ -25,15 +25,10 @@
       </v-toolbar-title>
       <v-spacer></v-spacer>
       <v-toolbar-items class="hidden-xs-only">
-        <v-btn
-          text
-          v-for="item in menuItems"
-          :key="item.title"
-          :to="item.path"
-        >
+        <v-btn text v-for="item in menuItems" :key="item.title" :to="item.path">
           {{ item.title }}
         </v-btn>
-        <v-btn text v-on:click="admin()">  
+        <v-btn text>
           <v-icon>mdi-account</v-icon>
         </v-btn>
       </v-toolbar-items>
@@ -48,24 +43,22 @@
 
 <script>
 export default {
-  // name: "HomeView",
+  name: "Adminmain",
   components: {},
   data() {
     return {
       appTitle: "Pasteleria Candy",
       sidebar: false,
       menuItems: [
-        { title: "Pasteles", path: "/Homepasteles/pastel" },
-        { title: "Crea tu pastel", path: "/Homepasteles/form" },
-        { title: "Acerca de nosotros", path: "/Homepasteles/about" },
+        { title: "Home", path: "/Homepasteles/pastel" },
+        { title: "Pedidos", path: "/admin/pedidos" },
+        { title: "Inventario", path: "/admin/about" },
       ],
     };
   },
   created() {},
   methods: {
-     admin() {
-      this.$router.push({ path:"/admin/pedidos"});
-    },
+   
   },
   mounted() {},
 };
