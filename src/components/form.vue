@@ -76,7 +76,7 @@
 
           <v-row>
             <v-spacer></v-spacer>
-            <v-btn
+            <!-- <v-btn
               right
               :disabled="!valid"
               color="success"
@@ -84,8 +84,8 @@
               @click="validate"
             >
               Validate
-            </v-btn>
-
+            </v-btn> -->
+            <contacto></contacto>
             <!-- <v-btn right color="error" class="mr-4" @click="reset">
           Reset Form
         </v-btn> -->
@@ -97,7 +97,11 @@
 </template>
 
 <script>
+import contacto from '../components/contacto.vue'
 export default {
+  components:{
+    contacto
+  },
     data() {
         return {
             valid: true,

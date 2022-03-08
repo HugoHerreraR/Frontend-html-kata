@@ -1,4 +1,4 @@
-<template>
+<template> 
   <v-container fill-height fluid>
     <v-row align="center" justify="center">
       <v-col cols="12" md="6" sm="6">

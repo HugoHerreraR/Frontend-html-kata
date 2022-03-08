@@ -16,7 +16,7 @@
 
           <v-card-actions>
             <v-spacer></v-spacer>
-            <v-btn color="orange" text> Comprar </v-btn>
+            <formcontacto></formcontacto>
           </v-card-actions>
         </v-card>
       </v-col>
@@ -37,7 +37,7 @@
 
           <v-card-actions>
             <v-spacer></v-spacer>
-            <v-btn color="orange" text> Comprar </v-btn>
+            <formcontacto></formcontacto>
           </v-card-actions>
         </v-card>
       </v-col>
@@ -57,7 +57,7 @@
 
           <v-card-actions>
             <v-spacer></v-spacer>
-            <v-btn color="orange" text> Comprar </v-btn>
+            <formcontacto></formcontacto>
           </v-card-actions>
         </v-card>
       </v-col>
@@ -81,7 +81,7 @@
 
           <v-card-actions>
             <v-spacer></v-spacer>
-            <v-btn color="orange" text> Comprar </v-btn>
+            <formcontacto></formcontacto>
           </v-card-actions>
         </v-card>
       </v-col>
@@ -102,7 +102,7 @@
           </v-card-text>
           <v-card-actions>
             <v-spacer></v-spacer>
-            <v-btn color="orange" text> Comprar </v-btn>
+            <formcontacto></formcontacto>
           </v-card-actions>
         </v-card>
       </v-col>
@@ -124,7 +124,7 @@
           </v-card-text>
           <v-card-actions>
             <v-spacer></v-spacer>
-            <v-btn color="orange" text> Comprar </v-btn>
+            <formcontacto></formcontacto>
           </v-card-actions>
         </v-card>
       </v-col>
@@ -133,6 +133,15 @@
     <!-- formulario -->
   </div>
 </template>
+
+<script>
+import formcontacto from '../components/formcontacto.vue'
+export default {
+  components:{
+    formcontacto
+  }
+}
+</script>
 
 <style>
 .card {

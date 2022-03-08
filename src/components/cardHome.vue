@@ -1,12 +1,12 @@
 <template>
-  <v-card class="mx-auto" max-width="344">
-    <v-card-title> Top western road trips </v-card-title>
+  <v-card class="mx-auto" max-width="344" color="#F48FB1" dark>
+    <v-card-title> Pasteleria Candy </v-card-title>
 
-    <v-card-subtitle> 1,000 miles of wonder </v-card-subtitle>
+    <v-card-subtitle> Encuantrarás una gran variedad de sabores y decoraciones </v-card-subtitle>
 
     <v-card-actions>
       <v-spacer></v-spacer>
-      <v-btn class="color" v-on:click="cargar"> Explore </v-btn>
+      <v-btn class="color" v-on:click="cargar"> Ver más </v-btn>
     </v-card-actions>
   </v-card>
 </template>
